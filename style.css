@@ -1,0 +1,96 @@
+:root {
+    --colorh1-: orange;
+    --colorh2-: dark;
+    --colorh3-: grey;
+    --colorhh4-: light;
+    --colorMainWhite-:#F7F7F7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.Survival {
+    width: 1440px;
+    height: 780px;
+    left: 0px;
+    top: -1px;
+    background: url(img/Rectangle.png);
+    filter: drop-shadow(-150px 0px 150px #02160B);
+    border-radius: 0px;
+}
+
+h1 {
+    color: var(--colorh1-);
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--colorh2-);
+}
+
+h3 {
+    color: var(--colorh3-);
+}
+
+h4 {
+    color: var(--colorhh4-);
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorMainWhite-);
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.list {
+    height: 100px;
+}
+
+.navigation {
+    width: 100%;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-around;
+    min-height: 12vh;
+    align-items: center;
+    font-family: inter;
+}
+
+.item {
+    font-size: 23px;
+}
+
+
+.latestArticle {
+    width: 1440px;
+    height: 1368px;
+    left: 0px;
+    top: 0px;
+    background: #CCCCCC;
+    border-radius: 0px;
+}
+
+.footer {
+    width: 1440px;
+    height: 360px;
+    left: 0px;
+    top: 0px;
+
+    background: url(img/footer.jpg);
+    border-radius: 0px;
+}
