@@ -1,1 +1,1 @@
-https://github.com/jackerbro/wildlife/tree/wildlife
+https://jackerbro.github.io/wildlife/
