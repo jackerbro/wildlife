@@ -3,7 +3,9 @@
     --colorh2-: dark;
     --colorh3-: grey;
     --colorhh4-: light;
-    --colorMainWhite-:#F7F7F7;
+    --colorMainWhite-: #F7F7F7;
+    --colorhover:#E39128;
+    --coloractive:#8F5613;
 }
 
 * {
@@ -13,13 +15,16 @@
     border: 0;
 }
 
+
 body {
     font-family: Open Sans;
     font-weight: 400;
 }
 
 *::before,
-*::after{box-sizing: border-box;}
+*::after {
+    box-sizing: border-box;
+}
 
 img {
     max-width: 100%;
@@ -55,46 +60,150 @@ h4 {
     color: var(--colorhh4-);
 }
 
+.header {
+    margin: auto;
+    width: 1440px;
+    padding-top: 19px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
 a {
     text-decoration: none;
     color: var(--colorMainWhite-);
+    font-size: 23px;
 }
 
-li {
-    list-style-type: none;
+.item-button {
+    width: 120px;
+    height: 50px;
+    border: 2px solid #CD6326;
+    box-sizing: border-box;
+    border-radius: 5px;
 
 }
 
-.item {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 779px;
+    background-image: url("assets/Rectangle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    margin: auto;
+
+}
+
+.hero__content {
+    padding-top: 199px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F7F7F7;
+    width: 284px;
+}
+
+.hero-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: #CD6326;
+}
+
+.hero-descr {
+    padding-top: 51px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F7F7F7;
+}
+
+.hero-button {
+    cursor: pointer;
+    top:50px;
+    Width :160px;
+    Height:60px;
+    background: #CD6326;
+    border-radius: 5px;
+    color: #F7F7F7;
+    font-family: Roboto;
+    font-size: 23px;
+}
+
+.hero-button:hover {
+    background-color: var(--colorhover);
+}
+
+.hero-button:active {
+    background-color: var(--coloractive);
+}
+
+.block {
+    position: relative;
+    top:49px;
+}
+
+.item-1 {
+    font-size: 32px;
+    color: white;
+}
+
+.item-1 {
+    padding-left: 15px;
+    padding-right: 480px;
+    line-height: 60px;
+
+}
+.item-2 {
+    padding-left: 61px;
+    padding-right: 60px;
+    font-size: 23px;
     line-height: 60px;
 }
 
-.Survival {
-    width: 1440px;
-    height: 780px;
-    left: 0px;
-    top: -1px;
-    background: url(assets/Rectangle.png);
-    filter: drop-shadow(-150px 0px 150px #02160B);
-    border-radius: 0px;
+.item-3 {
+    padding-right: 61px;
 }
 
-
-.latestArticle {
-    width: 1440px;
-    height: 1368px;
-    left: 0px;
-    top: 0px;
-    background: #CCCCCC;
-    border-radius: 0px;
+.lope {
+    width: 32px;
+    height: 32px;
+    top: 33px;
+    transition: 1s; /* Время эффекта */
 }
 
+.lope:hover {
+    transform: scale(1.5); /* Увеличиваем масштаб */
+}
 
-.footer {
-    width: 1440px;
-    height: 360px;
-    left: 0px;
-    top: 0px;
-    background: url(assets/footer.jpg);
-    border-radius: 0px;
+a:hover{
+    color: #6666;
+}
+
+.item-button:hover {
+    background-color: var(--colorhover);
+}
+
+.item-button:active {
+    background-color:var(--coloractive);
 }
