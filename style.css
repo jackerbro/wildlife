@@ -1,0 +1,366 @@
+:root {
+    --colorh1-: orange;
+    --colorh2-: dark;
+    --colorh3-: grey;
+    --colorhh4-: light;
+    --colorMainWhite-: #F7F7F7;
+    --colorhover:#E39128;
+    --coloractive:#8F5613;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.list-reset {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--colorh1-);
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--colorh2-);
+}
+
+h3 {
+    color: var(--colorh3-);
+}
+
+h4 {
+    color: var(--colorhh4-);
+}
+
+.header {
+    width: 1440px;
+    padding-top: 19px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorMainWhite-);
+    font-size: 23px;
+}
+
+.item-button {
+    width: 120px;
+    height: 50px;
+    border: 2px solid #CD6326;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 779px;
+    background-image: url("assets/Rectangle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    margin: auto;
+
+}
+
+.hero__content {
+    padding-top: 199px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F7F7F7;
+    width: 284px;
+}
+
+.hero-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: #CD6326;
+}
+
+.hero-descr {
+    padding-top: 51px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F7F7F7;
+}
+
+.hero-button {
+    cursor: pointer;
+    top:50px;
+    Width :160px;
+    Height:60px;
+    background: #CD6326;
+    border-radius: 5px;
+    color: #F7F7F7;
+    font-family: Roboto;
+    font-size: 23px;
+}
+
+.hero-button:hover {
+    background-color: var(--colorhover);
+}
+
+.hero-button:active {
+    background-color: var(--coloractive);
+}
+
+.block {
+    position: relative;
+    top:49px;
+}
+
+.item-1 {
+    font-size: 32px;
+    color: white;
+}
+
+.item-1 {
+    padding-left: 15px;
+    padding-right: 480px;
+    line-height: 60px;
+
+}
+.item-2 {
+    padding-left: 61px;
+    padding-right: 60px;
+    font-size: 23px;
+    line-height: 60px;
+}
+
+.item-3 {
+    padding-right: 61px;
+}
+
+.lope {
+    width: 32px;
+    height: 32px;
+    top: 33px;
+    transition: 1s; /* Время эффекта */
+}
+
+.lope:hover {
+    transform: scale(1.5); /* Увеличиваем масштаб */
+}
+
+a:hover{
+    color: #6666;
+}
+
+.item-button:hover {
+    background-color: var(--colorhover);
+}
+
+.item-button:active {
+    background-color:var(--coloractive);
+}
+
+.latest-articles {
+    height: 1368px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    margin: auto;
+    background-color: #cccccc
+}
+
+.site-title {
+    padding-top: 120px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+}
+
+.site-descr{
+    padding-top: 20px;
+    font-family: Open Sans;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #666666;
+    padding-bottom: 120px;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture{
+    padding: 0 30px;
+}
+
+.arrow {
+    width: 30px;
+    height: 70px;
+    padding: 0 0 0 0;
+}
+
+.arrow-right:hover {
+    transform: translate(10px,0);
+    -webkit-transform: translate(25px,0); /** Chrome & Safari **/
+    -o-transform: translate(20px,0); /** Opera **/
+    -moz-transform: translate(20px,0); /** Firefox **/
+}
+
+.arrow-left:hover {
+    transform: translate(10px,0);
+    -webkit-transform: translate(-25px,0); /** Chrome & Safari **/
+    -o-transform: translate(20px,0); /** Opera **/
+    -moz-transform: translate(20px,0); /** Firefox **/
+}
+
+.notify-title {
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+    padding-top: 239px;
+    padding-bottom: 59px;
+}
+
+.send-email {
+    text-align: center;
+}
+
+.send {
+    color: #F7F7F7;
+    font-size: 23px;
+    width: 120px;
+    height: 60px;
+    background: #CD6326;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.send:hover {
+    background-color: var(--colorhover);
+}
+
+.send:active {
+    background-color: var(--coloractive);
+}
+
+.text-input {
+    width: 510px;
+    height: 60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    align-items: center;
+    color: #666666;
+    background-color: #CCCCCC;
+    border: 1px solid;
+}
+
+.footer {
+    height: 359px;
+    background-image: url("assets/footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    margin: auto;
+}
+
+.footer-list {
+    height: 359px;
+    align-items: center;
+    align-self: center;
+}
+
+.first-item {
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 120px;
+    /* Logo */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #F7F7F7;
+}
+
+.second-item {
+    padding-left: 86px;
+    padding-right: 85px;
+}
+
+.facebook {
+    padding-right: 27px;
+    padding-left: 120px;
+}
+
+.patreon {
+    padding-right: 27px;
+    padding-left: 26px;
+}
+
+.footer-picture{
+    transition: 1s; /* Время эффекта */
+}
+
+.footer-picture:hover {
+    transform: scale(1.5); /* Увеличиваем масштаб */
+}
