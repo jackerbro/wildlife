@@ -4,8 +4,8 @@
     --colorh3-: grey;
     --colorhh4-: light;
     --colorMainWhite-: #F7F7F7;
-    --colorhover:#E39128;
-    --coloractive:#8F5613;
+    --colorhover: #E39128;
+    --coloractive: #8F5613;
 }
 
 * {
@@ -139,9 +139,9 @@ a {
 
 .hero-button {
     cursor: pointer;
-    top:50px;
-    Width :160px;
-    Height:60px;
+    top: 50px;
+    Width: 160px;
+    Height: 60px;
     background: #CD6326;
     border-radius: 5px;
     color: #F7F7F7;
@@ -159,7 +159,7 @@ a {
 
 .block {
     position: relative;
-    top:49px;
+    top: 49px;
 }
 
 .item-1 {
@@ -173,6 +173,7 @@ a {
     line-height: 60px;
 
 }
+
 .item-2 {
     padding-left: 61px;
     padding-right: 63px;
@@ -195,7 +196,7 @@ a {
     transform: scale(1.5); /* Увеличиваем масштаб */
 }
 
-a:hover{
+a:hover {
     color: #6666;
 }
 
@@ -204,7 +205,7 @@ a:hover{
 }
 
 .item-button:active {
-    background-color:var(--coloractive);
+    background-color: var(--coloractive);
 }
 
 .latest-articles {
@@ -227,7 +228,7 @@ a:hover{
     text-align: center;
 }
 
-.site-descr{
+.site-descr {
     padding-top: 20px;
     font-family: Open Sans;
     font-size: 24px;
@@ -243,9 +244,10 @@ a:hover{
     justify-content: center;
 }
 
-.picture{
+.picture {
     padding: 0 30px;
 }
+
 
 .arrow {
     width: 30px;
@@ -253,18 +255,30 @@ a:hover{
     padding: 0 0 0 0;
 }
 
+.arrow-right {
+    position: relative;
+    left: 28px;
+    top: -25px;
+}
+
 .arrow-right:hover {
-    transform: translate(10px,0);
-    -webkit-transform: translate(25px,0); /** Chrome & Safari **/
-    -o-transform: translate(20px,0); /** Opera **/
-    -moz-transform: translate(20px,0); /** Firefox **/
+    transform: translate(10px, 0);
+    -webkit-transform: translate(25px, 0); /** Chrome & Safari **/
+    -o-transform: translate(20px, 0); /** Opera **/
+    -moz-transform: translate(20px, 0); /** Firefox **/
+}
+
+.arrow-left {
+    position: relative;
+    right: 28px;
+    top: -25px;
 }
 
 .arrow-left:hover {
-    transform: translate(10px,0);
-    -webkit-transform: translate(-25px,0); /** Chrome & Safari **/
-    -o-transform: translate(20px,0); /** Opera **/
-    -moz-transform: translate(20px,0); /** Firefox **/
+    transform: translate(10px, 0);
+    -webkit-transform: translate(-25px, 0); /** Chrome & Safari **/
+    -o-transform: translate(20px, 0); /** Opera **/
+    -moz-transform: translate(20px, 0); /** Firefox **/
 }
 
 .notify-title {
@@ -272,7 +286,7 @@ a:hover{
     line-height: 40px;
     text-align: center;
     color: #333333;
-    padding-top: 239px;
+    padding-top: 173px;
     padding-bottom: 59px;
 }
 
@@ -312,6 +326,7 @@ a:hover{
 }
 
 .footer {
+    top: 1px;
     height: 359px;
     background-image: url("assets/footer.jpg");
     background-position: center;
@@ -328,14 +343,9 @@ a:hover{
 }
 
 .first-item {
-    height: 60px;
     padding-left: 15px;
-    padding-right: 120px;
-    /* Logo */
-
+    padding-right: 123px;
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 60px;
     text-transform: uppercase;
@@ -343,13 +353,13 @@ a:hover{
 }
 
 .second-item {
-    padding-left: 86px;
+    padding-left: 91px;
     padding-right: 85px;
 }
 
 .facebook {
     padding-right: 27px;
-    padding-left: 120px;
+    padding-left: 125px;
 }
 
 .patreon {
@@ -357,10 +367,50 @@ a:hover{
     padding-left: 26px;
 }
 
-.footer-picture{
+.footer-picture {
     transition: 1s; /* Время эффекта */
 }
 
 .footer-picture:hover {
     transform: scale(1.5); /* Увеличиваем масштаб */
+}
+
+image {
+    position: relative;
+    width: 100%;
+}
+
+h4 {
+    position: relative;
+    bottom: 118px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    /* identical to box height, or 164% */
+
+    text-align: center;
+
+    /* font-light */
+
+    color: #F7F7F7;
+}
+
+.picture-descr {
+    position: relative;
+    bottom: 107px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 27px;
+    /* identical to box height, or 159% */
+
+    text-align: center;
+
+    /* font-light */
+
+    color: #F7F7F7;
 }
